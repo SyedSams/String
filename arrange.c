@@ -14,19 +14,18 @@ void main()
 		scanf("%s",string);
 		printf("\nEnter the sub string: ");
         	scanf("%s",substring);
-      
-        strLen=len(string);
-	subLen=len(substring);
-
-
+		
+		
         int len(char str[]){ 
         int i;
 
         for (i = 0; str[i] != '\0'; ++i);
         	return i;
-    }
-
-        
+         }
+      
+        strLen=len(string);
+	subLen=len(substring);
+		
         int isSubstring(char *s1, int strLen, char *s2, int subLen){
  
         for (int i = 0; i <= strLen - subLen; i++) {
